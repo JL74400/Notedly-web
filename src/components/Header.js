@@ -44,7 +44,7 @@ const Header = props => {
       <UserState>
         {data.isLoggedIn ? (
           <p>
-            <em><b>{localStorage.getItem('username')}</b></em> -{' '}
+            <em><b>{localStorage.getItem('username')}</b></em><br />
             <ButtonAsLink
               onClick={() => {
                 localStorage.removeItem('token');
